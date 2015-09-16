@@ -13,7 +13,7 @@ namespace calculadora
             Console.WriteLine("hello world");
             Console.ReadKey();
             int op;
-            float x, y, z;
+            double x, y, z;
             do
             {
                 Console.WriteLine("elija una operacion");
@@ -25,7 +25,16 @@ namespace calculadora
                 op = int.Parse(Console.ReadLine());
                 switch (op)
                 {
- 
+                    case 1:
+                        {
+                            Console.WriteLine("ingrese primer numero");
+                            x=double.Parse(Console.ReadLine());
+                            Console.WriteLine("ingrese segundo numero");
+                            y = double.Parse(Console.ReadLine());
+                            z = x + y;
+                            Console.WriteLine("resultado "+ z);
+                            break;
+                        }
                 }
             } while (op != 5);
 
