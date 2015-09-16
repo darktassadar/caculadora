@@ -1,0 +1,1 @@
+D:\cursogit\calculadora\calculadora\bin\Debug\calculadora.exe.config
