@@ -35,6 +35,36 @@ namespace calculadora
                             Console.WriteLine("resultado "+ z);
                             break;
                         }
+                    case 2:
+                        {
+                            Console.WriteLine("ingrese primer numero");
+                            x = double.Parse(Console.ReadLine());
+                            Console.WriteLine("ingrese segundo numero");
+                            y = double.Parse(Console.ReadLine());
+                            z = x - y;
+                            Console.WriteLine("resultado " + z);
+                            break;
+                        }
+                    case 3:
+                        {
+                            Console.WriteLine("ingrese primer numero");
+                            x = double.Parse(Console.ReadLine());
+                            Console.WriteLine("ingrese segundo numero");
+                            y = double.Parse(Console.ReadLine());
+                            z = x * y;
+                            Console.WriteLine("resultado " + z);
+                            break;
+                        }
+                    case 4:
+                        {
+                            Console.WriteLine("ingrese primer numero");
+                            x = double.Parse(Console.ReadLine());
+                            Console.WriteLine("ingrese segundo numero");
+                            y = double.Parse(Console.ReadLine());
+                            z = x / y;
+                            Console.WriteLine("resultado " + z);
+                            break;
+                        }
                 }
             } while (op != 5);
 
