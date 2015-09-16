@@ -14,12 +14,19 @@ namespace calculadora
             Console.ReadKey();
             int op;
             double x, y, z;
+<<<<<<< HEAD
             double resta;
+=======
+>>>>>>> suma
             Console.WriteLine("ingrese primer numero");
             x = double.Parse(Console.ReadLine());
             Console.WriteLine("ingrese segundo numero");
             y = double.Parse(Console.ReadLine());
+<<<<<<< HEAD
             resta = x - y;
+=======
+            double suma = x + y;
+>>>>>>> suma
             do
             {
                 Console.WriteLine("elija una operacion");
