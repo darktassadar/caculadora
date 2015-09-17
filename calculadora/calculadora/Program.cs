@@ -29,10 +29,15 @@ namespace calculadora
                 Console.WriteLine("3 multiplicacion");
                 Console.WriteLine("4 division");
 <<<<<<< HEAD
+<<<<<<< HEAD
                 Console.WriteLine("5 potencia");
 =======
                 Console.WriteLine("6 logaritmo");
 >>>>>>> rama2
+=======
+                Console.WriteLine("7 maximo");
+                Console.WriteLine("8 minimo");
+>>>>>>> rama3
                 Console.WriteLine("salir");
                 op = int.Parse(Console.ReadLine());
                 switch (op)
@@ -78,6 +83,7 @@ namespace calculadora
                             break;
                         }
 <<<<<<< HEAD
+<<<<<<< HEAD
                     case 5:
                         {
 
@@ -104,6 +110,30 @@ namespace calculadora
 =======
             } while (op != 8);
 >>>>>>> rama2
+=======
+                    case 7:
+                        {
+                            Console.WriteLine("ingrese primer numero");
+                            x = double.Parse(Console.ReadLine());
+                            Console.WriteLine("ingrese segundo numero");
+                            y = double.Parse(Console.ReadLine());
+                            z = Math.Max(x, y);
+                            Console.WriteLine("el mayor es " + z);
+                            break;
+                        }
+                    case 8:
+                        {
+                            Console.WriteLine("ingrese primer numero");
+                            x = double.Parse(Console.ReadLine());
+                            Console.WriteLine("ingrese segundo numero");
+                            y = double.Parse(Console.ReadLine());
+                            z = Math.Min(x,y);
+                            Console.WriteLine("el minimo es " + z);
+                            break;
+                        }
+                }
+            } while (op != 9);
+>>>>>>> rama3
 
         }
     }
