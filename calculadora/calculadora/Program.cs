@@ -28,6 +28,8 @@ namespace calculadora
                 Console.WriteLine("2 resta");
                 Console.WriteLine("3 multiplicacion");
                 Console.WriteLine("4 division");
+                Console.WriteLine("7 maximo");
+                Console.WriteLine("8 minimo");
                 Console.WriteLine("salir");
                 op = int.Parse(Console.ReadLine());
                 switch (op)
@@ -72,8 +74,28 @@ namespace calculadora
                             Console.WriteLine("resultado " + z);
                             break;
                         }
+                    case 7:
+                        {
+                            Console.WriteLine("ingrese primer numero");
+                            x = double.Parse(Console.ReadLine());
+                            Console.WriteLine("ingrese segundo numero");
+                            y = double.Parse(Console.ReadLine());
+                            z = Math.Max(x, y);
+                            Console.WriteLine("el mayor es " + z);
+                            break;
+                        }
+                    case 8:
+                        {
+                            Console.WriteLine("ingrese primer numero");
+                            x = double.Parse(Console.ReadLine());
+                            Console.WriteLine("ingrese segundo numero");
+                            y = double.Parse(Console.ReadLine());
+                            z = Math.Min(x,y);
+                            Console.WriteLine("el minimo es " + z);
+                            break;
+                        }
                 }
-            } while (op != 5);
+            } while (op != 9);
 
         }
     }
